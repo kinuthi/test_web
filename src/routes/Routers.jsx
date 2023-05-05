@@ -5,6 +5,8 @@ import RegisterForm from '../pages/register/Register';
 import ForgotPassword from '../pages/login/Forgot_password';
 import Home from '../pages/Home/Home';
 import Dashboard from '../pages/dashboard/Dashboard';
+import Users from '../pages/users/Users';
+import Blogs from '../pages/blogs/blogs';
 
 function Routers() {
 	return (
@@ -16,7 +18,9 @@ function Routers() {
 				<Route path='reset' element={<ForgotPassword />} />
         
 				<Route path='/' element={<Home />}>
-          <Route index element={<Dashboard/>}/>
+		<Route index element={<Dashboard/>}/>
+		<Route path='users' element={<Users/>}/>
+		<Route path='blogs' element={<Blogs/>}/>
         </Route>
 			</Route>
       
